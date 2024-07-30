@@ -119,7 +119,7 @@ xfconf-query -c xfwm4 -p /general/placement_ratio -n -t int -s 100
 xfconf-query -c xfwm4 -p /general/show_popup_shadow -n -t bool -s true
 xfconf-query -c xfwm4 -p /general/wrap_windows -n -t bool -s false
 xfconf-query -c xfce4-panel -p /panels/panel-1/size -n -t int -s 32
-xfconf-query -c xfce4-panel -p /panels/panel-1/icon-size -n -t int -s 0
+xfconf-query -c xfce4-panel -p /panels/panel-1/icon-size -n -t int -s 16
 xfconf-query -c xfce4-panel -p /plugins/plugin-1/show-button-title -n -t bool -s false
 xfconf-query -c xfce4-panel -p /plugins/plugin-1/button-icon -n -t string -s "desktop-environment-xfce"
 #xfconf-query -c xfce4-panel -p /panels -n -t int -s 1 -a

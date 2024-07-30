@@ -111,6 +111,7 @@ echo ""
 echo "Installing XFCE..."
 echo ""
 sudo pacman -S --needed --noconfirm - <xfce
+xdg-user-dirs-update
 xfconf-query -c xfwm4 -p /general/button_layout -n -t string -s "|HMC"
 xfconf-query -c xfwm4 -p /general/raise_with_any_button -n -t bool -s false
 xfconf-query -c xfwm4 -p /general/mousewheel_rollup -n -t bool -s false

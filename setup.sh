@@ -119,7 +119,7 @@ xfconf-query -c xfwm4 -p /general/placement_ratio -n -t int -s 100
 xfconf-query -c xfwm4 -p /general/show_popup_shadow -n -t bool -s true
 xfconf-query -c xfwm4 -p /general/wrap_windows -n -t bool -s false
 xfconf-query -c xfce4-panel -p /panels/panel-1/size -n -t int -s 32
-xfconf-query -c xfce4-panel -p /panels/panel-1/icon-size -n -t int -s 16
+xfconf-query -c xfce4-panel -p /panels/panel-1/icon-size -n -t int -s 0
 xfconf-query -c xfce4-panel -p /plugins/plugin-1/show-button-title -n -t bool -s false
 xfconf-query -c xfce4-panel -p /plugins/plugin-1/button-icon -n -t string -s "desktop-environment-xfce"
 #xfconf-query -c xfce4-panel -p /panels -n -t int -s 1 -a
@@ -133,7 +133,7 @@ xfconf-query -c xfce4-notifyd -p /log-level -n -t int -s 1
 xfconf-query -c xfce4-notifyd -p /log-max-size -n -t int -s 0
 xfconf-query -c xsettings -p /Xft/DPI -n -t int -s 100
 xfconf-query -c xsettings -p /Net/IconThemeName -n -t string -s "Papirus-Dark"
-#sudo sed -i 's/^#greeter-setup-script=.*/greeter-setup-script=\/usr\/bin\/numlockx on/' /etc/lightdm/lightdm.conf
+sudo sed -i 's/^#greeter-setup-script=.*/greeter-setup-script=\/usr\/bin\/numlockx on/' /etc/lightdm/lightdm.conf
 sudo cp lightdm-gtk-greeter.conf /etc/lightdm/
 sudo systemctl enable lightdm
 

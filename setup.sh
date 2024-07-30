@@ -138,7 +138,7 @@ sudo cp lightdm-gtk-greeter.conf /etc/lightdm/
 sudo systemctl enable lightdm
 
 echo ""
-read -r -p "Do you want to install Papirus Icon Theme and Colloid GTK Theme? [y/N] " response
+read -r -p "Do you want to install Colloid GTK Theme? [y/N] " response
 if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]; then
     echo ""
     git clone https://github.com/vinceliuice/Colloid-gtk-theme.git --depth=1
